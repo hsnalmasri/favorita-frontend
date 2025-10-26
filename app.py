@@ -15,7 +15,7 @@ with st.sidebar:
     CI = st.slider("Confidence level", min_value=0.50, max_value=0.99, value=0.95, step=0.01)
     trend = st.selectbox("Trend", options=["add", "mul", None], index=0)
     seasonal = st.selectbox("Seasonal", options=["add", "mul", None], index=1)
-    api_url = st.text_input("API URL", value="https://favorita-backend.onrender.com/ets/tune")
+    api_url = st.text_input("API URL", value="http://185.158.107.43/ets/tune")
 
 run = st.button("Run ETS")
 
